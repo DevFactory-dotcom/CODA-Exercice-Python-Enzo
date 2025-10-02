@@ -193,6 +193,15 @@ def exercice26():
     elif number1 < number2 :
         print("Ordre croissant : NON")
 
+# Exercice 26 :
+
+def exercice27():
+    number = int(input("Veuillez entrer le premier nombre : "))
+    if number % 5 == 0  :
+        print(number ,"→Divisible par 5")
+    elif number % 5 != 0 :
+        print(number, "→Non divisible par 5")
+
 def main():
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
     if choix == "1":
@@ -247,6 +256,8 @@ def main():
         exercice25()
     elif choix == "26":
         exercice26()
+    elif choix == "27":
+        exercice27()
     else:
         print("Exercice non reconnu.")
 
