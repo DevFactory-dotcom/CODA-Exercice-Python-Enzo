@@ -134,6 +134,13 @@ def exercice20():
     HT = int(input("Veuillez entrer le montant hors taxe que vous voulez convertir : "))
     print("Prix TTC =",HT * 1.20)
 
+# Exercice 20 :
+
+def exercice21():
+    age = int(input("Veuillez entrer votre âge : "))
+    name = input("Veuillez entrer votre prénom : ")
+    print(name,"a",age,"ans")
+
 def main():
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
     if choix == "1":
@@ -176,6 +183,8 @@ def main():
         exercice19()
     elif choix == "20":
         exercice20()
+    elif choix == "21":
+        exercice21()
     else:
         print("Exercice non reconnu.")
 
