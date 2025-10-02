@@ -276,6 +276,15 @@ def exercice35():
         if i % 2 == 0 :
             print(i)
 
+# Exercice 35 :
+
+def exercice36():
+    number = int(input("Veuillez entrer le nombre : "))
+    carre_parfait = 1
+    for i in range(1,number+1) :
+        carre_parfait = i ** 2
+        if carre_parfait < number :
+            print(carre_parfait)
 
 def main():
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -349,6 +358,8 @@ def main():
         exercice34()
     elif choix == "35":
         exercice35()
+    elif choix == "36":
+        exercice36()
     else:
         print("Exercice non reconnu.")
 
