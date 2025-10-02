@@ -237,6 +237,13 @@ def exercice30():
     elif 10 > note :
         print(note,"→ Recalé")
 
+# Exercice 30 :
+
+def exercice31():
+    number = int(input("Veuillez entrer le nombre : "))
+    for i in range(1,number+1) :
+        print(i)
+
 def main():
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
     if choix == "1":
@@ -299,6 +306,8 @@ def main():
         exercice29()
     elif choix == "30":
         exercice30()
+    elif choix == "31":
+        exercice31()
     else:
         print("Exercice non reconnu.")
 
