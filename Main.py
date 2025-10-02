@@ -343,6 +343,23 @@ def exercice41():
     else :
         print(mdp,"→ Valide")
 
+# Exercice 41 :
+
+def exercice42():
+    notes =[]
+    n = int(input("Veuillez entrer le nombre de note que vous voulez calculer : "))
+    somme =0
+    for i in range (0,n):
+        note = int(input("Veuillez entrer vos notes : "))
+        notes.append(note)
+    for j in range (0, len(notes)):
+        somme = somme + notes[j]
+    moyenne = somme / n
+    print("Moyenne =",moyenne)
+
+    
+
+
 def main():
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
     if choix == "1":
@@ -427,6 +444,8 @@ def main():
         exercice40()
     elif choix == "41":
         exercice41()
+    elif choix == "42":
+        exercice42()
     else:
         print("Exercice non reconnu.")
 
