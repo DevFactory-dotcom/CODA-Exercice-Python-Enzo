@@ -31,35 +31,35 @@ def exercice5():
 def exercice6():
     number1 = int(input("Veuillez entrer un premier nombre : "))
     number2 = int(input("Veuillez entrer un deuxième nombre : "))
-    print(number1 + number2)
+    print(number1, "+" ,number2, "=",number1 + number2)
 
 # Exercice 6 :
 
 def exercice7():
     number1 = int(input("Veuillez entrer un premier nombre : "))
     number2 = int(input("Veuillez entrer un deuxième nombre : "))
-    print(number1 - number2)
+    print(number1, "-" ,number2, "=",number1 - number2)
 
 # Exercice 7 :
 
 def exercice8():
     number1 = int(input("Veuillez entrer un premier nombre : "))
     number2 = int(input("Veuillez entrer un deuxième nombre : "))
-    print(number1 - number2)
+    print(number1, "-" ,number2, "=", number1 - number2)
 
 # Exercice 8 :
 
 def exercice9():
     number1 = int(input("Veuillez entrer un premier nombre : "))
     number2 = int(input("Veuillez entrer un deuxième nombre : "))
-    print(number1 * number2)
+    print(number1, "x" ,number2, "=", number1 * number2)
 
 # Exercice 9 :
 
 def exercice10():
     number1 = int(input("Veuillez entrer un premier nombre : "))
     number2 = int(input("Veuillez entrer un deuxième nombre : "))
-    print(number1 / number2)
+    print(number1, "/" ,number2, "=", number1 / number2)
 
 # Exercice 10
 
@@ -71,13 +71,13 @@ def exercice11():
 
 def exercice11():
     number = int(input("Veuillez entrer un premier nombre : "))
-    print(number * 2)
+    print("Le double de", number ,"est",number * 2)
 
 # Exercice 11
 
 def exercice12():
     number = int(input("Veuillez entrer un premier nombre : "))
-    print(number / 2)
+    print("Le moitié de", number ,"est", number / 2)
 
 # Exercice 12
 
@@ -85,6 +85,19 @@ def exercice13():
     message = input("Veuillez entrer votre message : ")
     for i in range(1,6) :
         print(message)
+
+# Exercice 13
+
+def exercice14():
+    for i in range(1,6) :
+        print(i)
+
+# Exercice 14 :
+
+def exercice15():
+    for i in range (1, 6) :
+        print("2 x ",i ,"=", 2 * i )
+
 
 def main():
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -114,6 +127,10 @@ def main():
         exercice12()
     elif choix == "13":
         exercice13()
+    elif choix == "14":
+        exercice14()
+    elif choix == "15" :
+        exercice15()
     else:
         print("Exercice non reconnu.")
 
