@@ -122,6 +122,18 @@ def exercice18():
     euro = int(input("Veuillez entrer le nombre d'euro que vous voulez convertir : "))
     print(euro,"€ =", euro * 1.1)
 
+# Exercice 18 :
+
+def exercice19():
+    minutes = int(input("Veuillez entrer le nombre de minutes que vous voulez convertir : "))
+    print(minutes,"minutes =", minutes * 60,"secondes")
+
+# Exercice 19 :
+
+def exercice20():
+    HT = int(input("Veuillez entrer le montant hors taxe que vous voulez convertir : "))
+    print("Prix TTC =",HT * 1.20)
+
 def main():
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
     if choix == "1":
@@ -160,6 +172,10 @@ def main():
         exercice17()
     elif choix == "18" :
         exercice18()
+    elif choix == "19":
+        exercice19()
+    elif choix == "20":
+        exercice20()
     else:
         print("Exercice non reconnu.")
 
