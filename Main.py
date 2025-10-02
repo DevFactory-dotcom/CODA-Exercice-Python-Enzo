@@ -183,6 +183,16 @@ def exercice25():
     elif age1 < age2 :
         print(age2,"est plus grand")
 
+# Exercice 25 :
+
+def exercice26():
+    number1 = int(input("Veuillez entrer le premier nombre : "))
+    number2 = int(input("Veuillez entrer le deuxième nombre : "))
+    if number1 > number2 :
+        print("Ordre croissant : OUI")
+    elif number1 < number2 :
+        print("Ordre croissant : NON")
+
 def main():
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
     if choix == "1":
@@ -235,6 +245,8 @@ def main():
         exercice24()
     elif choix == "25":
         exercice25()
+    elif choix == "26":
+        exercice26()
     else:
         print("Exercice non reconnu.")
 
