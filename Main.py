@@ -386,6 +386,14 @@ def exercice44():
                 compteur += 1
     print(compteur)
 
+# Exercice 44 :
+
+def exercice45():
+    mot = input("Donner nous un mot : ")
+    result = ""
+    for lettre in mot :
+        result = lettre + result
+    print(result)
 
 def main():
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -477,6 +485,8 @@ def main():
         exercice43()
     elif choix == "44":
         exercice44()
+    elif choix == "45":
+        exercice45()
     else:
         print("Exercice non reconnu.")
 
