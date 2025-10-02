@@ -357,7 +357,22 @@ def exercice42():
     moyenne = somme / n
     print("Moyenne =",moyenne)
 
-    
+# Exercice 42
+
+def exercice43():
+    nombres =[]
+    n = int(input("Veuillez entrer le nombre de note que vous voulez calculer : "))
+    min = 0
+    max = 0
+    for i in range (0,n):
+        nombre = int(input("Veuillez entrer vos notes : "))
+        nombres.append(nombre)
+        min =nombres[0]
+        if nombres[i] > max :
+            max = nombres[i]
+        elif nombres[i] < min :
+            min = nombres[i]
+    print("Min =",min,"Max =",max)
 
 
 def main():
@@ -446,6 +461,8 @@ def main():
         exercice41()
     elif choix == "42":
         exercice42()
+    elif choix == "43":
+        exercice43()
     else:
         print("Exercice non reconnu.")
 
