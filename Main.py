@@ -12,7 +12,7 @@ def exercice2():
 # Exercice 2 :
 
 def exercice3() :
-    name = input("Quel est ton prénom ?")
+    name = input("Quel est votre prénom ?")
     print("Bonjour", name)
 
 # Exercice 3 :
@@ -64,19 +64,19 @@ def exercice10():
 # Exercice 10
 
 def exercice11():
-    number = int(input("Veuillez entrer un premier nombre : "))
+    number = int(input("Veuillez entrer un nombre : "))
     print(number ** 2)
 
 # Exercice 10
 
 def exercice11():
-    number = int(input("Veuillez entrer un premier nombre : "))
+    number = int(input("Veuillez entrer un nombre : "))
     print("Le double de", number ,"est",number * 2)
 
 # Exercice 11
 
 def exercice12():
-    number = int(input("Veuillez entrer un premier nombre : "))
+    number = int(input("Veuillez entrer un nombre : "))
     print("Le moitié de", number ,"est", number / 2)
 
 # Exercice 12
@@ -101,19 +101,19 @@ def exercice15():
 # Exercice 15 :
 
 def exercice16():
-    long = int(input("Veuillez entrer un premier nombre : "))
+    long = int(input("Veuillez entrer la longueur du coté de votre carré : "))
     print("Périmètre =", long * 4)
 
 # Exercice 15 :
 
 def exercice16():
-    long = int(input("Veuillez entrer un premier nombre : "))
+    long = int(input("Veuillez entrer la longueur du coté de votre carré : "))
     print("Périmètre =", long * 4)
 
 # Exercice 16 :
 
 def exercice17():
-    long = int(input("Veuillez entrer un premier nombre : "))
+    long = int(input("Veuillez entrer un nombre : "))
     print("Aire =", long ** 2)
 
 # Exercice 17 :
@@ -196,11 +196,23 @@ def exercice26():
 # Exercice 26 :
 
 def exercice27():
-    number = int(input("Veuillez entrer le premier nombre : "))
+    number = int(input("Veuillez entrer le nombre : "))
     if number % 5 == 0  :
         print(number ,"→Divisible par 5")
     elif number % 5 != 0 :
         print(number, "→Non divisible par 5")
+
+# Exercice 27
+   
+def exercice28():
+    age = int(input("Veuillez entrer votre age : "))
+    if age >= 18 :
+        print(age,"ans → Adulte")
+    elif 12 >= age > 18 :
+        print(age,"ans → Adolescent")
+    elif age < 12 :
+        print(age,"ans → Enfant")
+
 
 def main():
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -258,6 +270,8 @@ def main():
         exercice26()
     elif choix == "27":
         exercice27()
+    elif choix == "28":
+        exercice28()
     else:
         print("Exercice non reconnu.")
 
