@@ -17,7 +17,7 @@ def exercice3() :
 
 # Exercice 3 :
 
-def exerccie4() :
+def exercice4() :
     print("Première ligne \nDeuxième ligne \nTroisième ligne")
 
 # Exercice 4 :
@@ -116,6 +116,12 @@ def exercice17():
     long = int(input("Veuillez entrer un premier nombre : "))
     print("Aire =", long ** 2)
 
+# Exercice 17 :
+
+def exercice18():
+    euro = int(input("Veuillez entrer le nombre d'euro que vous voulez convertir : "))
+    print(euro,"€ =", euro * 1.1)
+
 def main():
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
     if choix == "1":
@@ -125,7 +131,7 @@ def main():
     elif choix == "3":
         exercice3()
     elif choix == "4":
-        exerccie4()
+        exercice4()
     elif choix == "5":
         exercice5()
     elif choix == "6":
@@ -152,6 +158,8 @@ def main():
         exercice16()
     elif choix == "17":
         exercice17()
+    elif choix == "18" :
+        exercice18()
     else:
         print("Exercice non reconnu.")
 
