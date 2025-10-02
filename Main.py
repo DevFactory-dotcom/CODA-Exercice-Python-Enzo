@@ -67,6 +67,13 @@ def exercice11():
     number = int(input("Veuillez entrer un premier nombre : "))
     print(number ** 2)
 
+# Exercice 10
+
+def exercice11():
+    number = int(input("Veuillez entrer un premier nombre : "))
+    print(number * 2)
+
+
 
 def main():
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
