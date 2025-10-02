@@ -98,6 +98,13 @@ def exercice15():
     for i in range (1, 6) :
         print("2 x ",i ,"=", 2 * i )
 
+# Exercice 15 :
+
+def exercice16():
+    long = int(input("Veuillez entrer un premier nombre : "))
+    print("Périmètre =", long * 4)
+
+
 
 def main():
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -131,6 +138,8 @@ def main():
         exercice14()
     elif choix == "15" :
         exercice15()
+    elif choix == "16":
+        exercice16()
     else:
         print("Exercice non reconnu.")
 
