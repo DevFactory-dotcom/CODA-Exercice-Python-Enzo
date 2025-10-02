@@ -334,6 +334,15 @@ def exercice40():
     else :
         print("Perdu !")
 
+#  Exercice 40 :
+
+def exercice41():
+    mdp = input("Veuillez inscrire votre mot de passe : ")
+    if len(mdp) <= 6 :
+        print(mdp,"→ Trop court")
+    else :
+        print(mdp,"→ Valide")
+
 def main():
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
     if choix == "1":
@@ -416,6 +425,8 @@ def main():
         exercice39()
     elif choix == "40":
         exercice40()
+    elif choix == "41":
+        exercice41()
     else:
         print("Exercice non reconnu.")
 
