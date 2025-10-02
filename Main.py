@@ -213,6 +213,16 @@ def exercice28():
     elif age < 12 :
         print(age,"ans → Enfant")
 
+# Exercice 28
+   
+def exercice29():
+    temp = int(input("Veuillez entrer la température de  l'eau : "))
+    if temp > 100 :
+        print(temp,"°C → Vapeur")
+    elif 0 >= temp >= 100 :
+        print(temp,"°C → Liquide")
+    elif temp < 0 :
+        print(temp,"°C → Glace")
 
 def main():
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -272,6 +282,8 @@ def main():
         exercice27()
     elif choix == "28":
         exercice28()
+    elif choix == "29":
+        exercice29()
     else:
         print("Exercice non reconnu.")
 
