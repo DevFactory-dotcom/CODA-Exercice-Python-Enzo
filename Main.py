@@ -73,7 +73,11 @@ def exercice11():
     number = int(input("Veuillez entrer un premier nombre : "))
     print(number * 2)
 
+# Exercice 11
 
+def exercice12():
+    number = int(input("Veuillez entrer un premier nombre : "))
+    print(number / 2)
 
 def main():
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -99,6 +103,8 @@ def main():
         exercice10()
     elif choix == "11" :
         exercice11()
+    elif choix == "12":
+        exercice12()
     else:
         print("Exercice non reconnu.")
 
