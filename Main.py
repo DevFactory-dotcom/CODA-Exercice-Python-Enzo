@@ -361,11 +361,11 @@ def exercice42():
 
 def exercice43():
     nombres =[]
-    n = int(input("Veuillez entrer le nombre de note que vous voulez calculer : "))
+    n = int(input("Veuillez entrer le nombre de nombre dans votre liste : "))
     min = 0
     max = 0
     for i in range (0,n):
-        nombre = int(input("Veuillez entrer vos notes : "))
+        nombre = int(input("Veuillez entrer vos nombres : "))
         nombres.append(nombre)
         min =nombres[0]
         if nombres[i] > max :
@@ -394,6 +394,19 @@ def exercice45():
     for lettre in mot :
         result = lettre + result
     print(result)
+
+# Exercice 45
+
+def exercice46():
+    nombres =[]
+    n = int(input("Veuillez entrer le nombre de nombre dans votre liste : "))
+    somme = 0
+    for i in range (0,n):
+        nombre = int(input("Veuillez entrer vos nombres : "))
+        nombres.append(nombre)
+    for j in range (0, len(nombres)):
+        somme += nombres[j]
+    print(somme)
 
 def main():
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -487,6 +500,8 @@ def main():
         exercice44()
     elif choix == "45":
         exercice45()
+    elif choix == "46":
+        exercice46()
     else:
         print("Exercice non reconnu.")
 
