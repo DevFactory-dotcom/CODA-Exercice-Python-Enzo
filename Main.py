@@ -104,7 +104,17 @@ def exercice16():
     long = int(input("Veuillez entrer un premier nombre : "))
     print("Périmètre =", long * 4)
 
+# Exercice 15 :
 
+def exercice16():
+    long = int(input("Veuillez entrer un premier nombre : "))
+    print("Périmètre =", long * 4)
+
+# Exercice 16 :
+
+def exercice17():
+    long = int(input("Veuillez entrer un premier nombre : "))
+    print("Aire =", long ** 2)
 
 def main():
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -140,6 +150,8 @@ def main():
         exercice15()
     elif choix == "16":
         exercice16()
+    elif choix == "17":
+        exercice17()
     else:
         print("Exercice non reconnu.")
 
