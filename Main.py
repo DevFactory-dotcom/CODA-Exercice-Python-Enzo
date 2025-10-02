@@ -268,6 +268,15 @@ def exercice34():
     for i in range(1,11) :
         print(number,"x",i,"=",number * i)
 
+# Exercice 34 :
+
+def exercice35():
+    number = int(input("Veuillez entrer le nombre : "))
+    for i in range(1,number+1) :
+        if i % 2 == 0 :
+            print(i)
+
+
 def main():
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
     if choix == "1":
@@ -338,6 +347,8 @@ def main():
         exercice33()
     elif choix == "34":
         exercice34()
+    elif choix == "35":
+        exercice35()
     else:
         print("Exercice non reconnu.")
 
