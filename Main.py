@@ -26,6 +26,22 @@ def exercice5():
     année = int(input("Votre année de naissance :"))
     print("Vous avez environ", 2025-année, "ans")
 
+# Exercice 5 :
+
+def exercice6():
+    number1 = int(input("Veuillez entrer un premier nombre : "))
+    number2 = int(input("Veuillez entrer un deuxième nombre : "))
+    print(number1 + number2)
+
+# Exercice 6 :
+
+def exercice7():
+    number1 = int(input("Veuillez entrer un premier nombre : "))
+    number2 = int(input("Veuillez entrer un deuxième nombre : "))
+    print(number1 - number2)
+
+
+
 
 
 
@@ -41,6 +57,10 @@ def main():
         exerccie4()
     elif choix == "5":
         exercice5()
+    elif choix == "6":
+        exercice6()
+    elif choix == "7" :
+        exercice7()
     else:
         print("Exercice non reconnu.")
 
