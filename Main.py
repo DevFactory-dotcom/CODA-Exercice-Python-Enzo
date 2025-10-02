@@ -141,6 +141,20 @@ def exercice21():
     name = input("Veuillez entrer votre prénom : ")
     print(name,"a",age,"ans")
 
+# Exercice 21 :
+
+def exercice22():
+    number = int(input("Veuillez entrer un nombre positif ou négatif : "))
+    if number >= 0 :
+        print(number,"→ Positif")
+    elif number < 0 :
+        print(number,"→ Négatif")
+    elif number == 0 :
+        print(number,"→ Nul")
+    else :
+        print("Ce n'est pas un nombre")
+        exercice22()
+
 def main():
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
     if choix == "1":
@@ -185,6 +199,8 @@ def main():
         exercice20()
     elif choix == "21":
         exercice21()
+    elif choix == "22":
+        exercice22()
     else:
         print("Exercice non reconnu.")
 
