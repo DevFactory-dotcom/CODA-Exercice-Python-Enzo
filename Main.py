@@ -224,6 +224,19 @@ def exercice29():
     elif temp < 0 :
         print(temp,"°C → Glace")
 
+# Exercice 29
+   
+def exercice30():
+    note = int(input("Veuillez entrer votre note : "))
+    if note >= 17 :
+        print(note,"→ Très bien")
+    elif 13 >= note >= 10 :
+        print(note,"→ Passable")
+    elif 16 >= note >= 14:
+        print(note,"→ Bien")
+    elif 10 > note :
+        print(note,"→ Recalé")
+
 def main():
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
     if choix == "1":
@@ -284,6 +297,8 @@ def main():
         exercice28()
     elif choix == "29":
         exercice29()
+    elif choix == "30":
+        exercice30()
     else:
         print("Exercice non reconnu.")
 
