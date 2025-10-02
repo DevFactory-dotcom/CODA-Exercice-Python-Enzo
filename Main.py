@@ -1,8 +1,8 @@
+from random import randint
+
 def exercice1():
     print("Exercice 1 : Bonjour le monde !")
     print("Hello World !")
-
-
 
 # Exercice 1 :
 
@@ -307,6 +307,32 @@ def exercice38():
         resultat += 2
 
 
+# Exercice 38 :
+
+def exercice39():
+    number1 = int(input("Veuillez entrer le premier nombre : "))
+    number2 = int(input("Veuillez entrer le deuxième nombre : "))
+    op = input("Veuillez rentrer votre opérateur pour votre opération : ")
+    if op == "+":
+        print(number1 + number2)
+    elif op == "-":
+        print(number1 - number2)
+    elif op == "*" or op == "x":
+        print(number1 * number2)
+    elif op == "/":
+        print(number1 / number2)
+
+# Exercice 39 :
+
+def exercice40():
+    secret = randint(0, 100)
+    message = input("Selon vous le nombre secret est pair ou impair ? ")
+    if secret % 2 == 0 and message == "pair" :
+        print("Gagné !")
+    elif secret % 2 != 0 and message == "impair" :
+        print("Gagné !")
+    else :
+        print("Perdu !")
 
 def main():
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -386,6 +412,10 @@ def main():
         exercice37()
     elif choix == "38":
         exercice38()
+    elif choix == "39":
+        exercice39()
+    elif choix == "40":
+        exercice40()
     else:
         print("Exercice non reconnu.")
 
