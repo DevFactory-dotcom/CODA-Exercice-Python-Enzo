@@ -40,6 +40,12 @@ def exercice7():
     number2 = int(input("Veuillez entrer un deuxième nombre : "))
     print(number1 - number2)
 
+# Exercice 7 :
+
+def exercice8():
+    number1 = int(input("Veuillez entrer un premier nombre : "))
+    number2 = int(input("Veuillez entrer un deuxième nombre : "))
+    print(number1 - number2)
 
 
 
@@ -59,8 +65,10 @@ def main():
         exercice5()
     elif choix == "6":
         exercice6()
-    elif choix == "7" :
+    elif choix == "7":
         exercice7()
+    elif choix == "8":
+        exercice8()
     else:
         print("Exercice non reconnu.")
 
