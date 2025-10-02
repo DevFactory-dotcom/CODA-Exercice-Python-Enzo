@@ -374,6 +374,18 @@ def exercice43():
             min = nombres[i]
     print("Min =",min,"Max =",max)
 
+# Exercice 43
+
+def exercice44():
+    compteur = 0
+    mot = input("Donner nous un mot : ")
+    voyelle =["a","e","i","o","u","y"]
+    for letter in mot :
+        for i in voyelle :
+            if letter == i :
+                compteur += 1
+    print(compteur)
+
 
 def main():
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -463,6 +475,8 @@ def main():
         exercice42()
     elif choix == "43":
         exercice43()
+    elif choix == "44":
+        exercice44()
     else:
         print("Exercice non reconnu.")
 
