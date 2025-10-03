@@ -471,6 +471,18 @@ def exercice51() :
         a, b = b, a + b
     print(list)
 
+#  Exercice 51 :
+
+def exercice52() :
+    list = [1]
+    n = 3
+    for i in range (1, n+1) :
+        list2 = list + [1]
+        for j in range(len(list) - 1) :
+            list2[j+1] = list[j] + list2[j+1]
+        list = list2
+        print(list)
+
 def main():
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
     if choix == "1":
@@ -575,6 +587,8 @@ def main():
         exercice50()
     elif choix == "51":
         exercice51()
+    elif choix == "52":
+        exercice52()
     else:
         print("Exercice non reconnu.")
 
