@@ -460,6 +460,16 @@ def exercice50() :
     else:
         print(nombre,"→Premier")
 
+# Exercice 50 :
+
+def exercice51() :
+    fibo = int(input("Veuillez entrer votre nombre qui servira de fin a la suite de fibonacci : "))
+    a, b = 0, 1
+    list = []
+    for i in range(0,fibo) :
+        list.append(a)
+        a, b = b, a + b
+    print(list)
 
 def main():
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -563,6 +573,8 @@ def main():
         exercice49()
     elif choix == "50":
         exercice50()
+    elif choix == "51":
+        exercice51()
     else:
         print("Exercice non reconnu.")
 
