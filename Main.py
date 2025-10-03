@@ -437,6 +437,16 @@ def exercice48():
             compteur += 1
     print(compteur)
 
+# Exercice 48
+
+def exercice49() :
+    nombre = int(input("Veuillez entrer vos nombres : "))
+    diviseur = []
+    for i in range (1, nombre+1):
+        if nombre % i == 0 :
+            diviseur.append(i)
+    print(diviseur)
+
 
 
 def main():
@@ -537,6 +547,8 @@ def main():
         exercice47()
     elif choix == "48":
         exercice48()
+    elif choix == "49":
+        exercice49()
     else:
         print("Exercice non reconnu.")
 
