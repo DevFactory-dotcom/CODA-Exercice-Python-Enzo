@@ -408,6 +408,37 @@ def exercice46():
         somme += nombres[j]
     print(somme)
 
+
+# Exercice 46
+
+def exercice47():
+    nombres =[]
+    n = int(input("Veuillez entrer le nombre de nombre dans votre liste : "))
+    trouve = int(input("Veuillez entrer le nombre que vous voulez rechercher dans la liste : "))
+    for i in range (0,n):
+        nombre = int(input("Veuillez entrer vos nombres : "))
+        nombres.append(nombre)
+    for j in range(0,len(nombres)):
+        if nombres[j] == trouve :
+            print("Trouvé a l'indice ",j)
+
+# Exercice 47
+
+def exercice48():
+    compteur = 0
+    tab =[]
+    n = int(input("Veuillez entrer le nombre de nombre dans votre liste : "))
+    trouve = int(input("Veuillez entrer le nombre que vous voulez rechercher dans la liste : "))
+    for i in range (0,n):
+        nombre = int(input("Veuillez entrer vos nombres : "))
+        tab.append(nombre)
+    for j in range(0,len(tab)):
+        if tab[j] == trouve :
+            compteur += 1
+    print(compteur)
+
+
+
 def main():
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
     if choix == "1":
@@ -502,6 +533,10 @@ def main():
         exercice45()
     elif choix == "46":
         exercice46()
+    elif choix == "47" :
+        exercice47()
+    elif choix == "48":
+        exercice48()
     else:
         print("Exercice non reconnu.")
 
