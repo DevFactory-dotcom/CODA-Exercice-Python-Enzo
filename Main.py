@@ -557,7 +557,45 @@ def exercice56():
         nombre *= compt
         compt -= 1
     print(nombre)
+
+# Exercice 56 :
+
+def exercice57() :
+    u0 = int(input("Veuillez entrer la valeur de votre premier terme : "))
+    r = int(input("Veuillez entrer la valeur de votre raison : "))
+    terme = int(input("Veuillez entrer la valeur de jusqu'ou ira la suite : "))
+    for i in range (1, terme + 1) :
+        print(u0)
+        u0 += r
         
+# Exercice 57 :
+
+def exercice58():
+    phrase = input("Veuillez saisir une phrase : ")
+    vcomp = 0
+    mot_long = ""
+    compteur = 0
+    res = ""
+    
+    for c in phrase:
+        if c == " ":
+            if compteur > vcomp:
+                vcomp = compteur
+                mot_long = res
+            res = ""
+            compteur = 0
+        else:
+            compteur += 1
+            res += c
+    
+    if compteur > vcomp:
+        vcomp = compteur
+        mot_long = res
+
+    print(vcomp, mot_long)
+
+
+
 
 def main():
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -673,6 +711,10 @@ def main():
         exercice55()
     elif choix == "56" :
         exercice56()
+    elif choix == "57" :
+        exercice57()
+    elif choix == "58" :
+        exercice58()
     else:
         print("Exercice non reconnu.")
 
