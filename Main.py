@@ -531,6 +531,17 @@ grille = [
     [4, 9, 2]
 ]
 
+# Exercice 53 :
+
+def exercice54() :
+    nombre = int(input("Veuillez entrer le nombre que vous voulez convertir (max 16) : "))
+    result = ""
+    while nombre > 0 :
+        result += str(nombre%2)
+        nombre = nombre // 2
+    print(result)
+
+
 
 def main():
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -640,6 +651,8 @@ def main():
         exercice52()
     elif choix == "53" :
         exercice53(grille)
+    elif choix == "54" :
+        exercice54()
     else:
         print("Exercice non reconnu.")
 
