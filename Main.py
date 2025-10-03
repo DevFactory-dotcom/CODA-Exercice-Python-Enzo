@@ -483,6 +483,55 @@ def exercice52() :
         list = list2
         print(list)
 
+# Exercice 52 :
+
+def exercice53(grille) :
+    somme_cible = 0
+    for j in range(3) :
+        somme_cible = somme_cible + grille[0][j]
+
+    est_magique = True
+
+    for i in range(3) :
+        s = 0
+        for j in range(3) :
+            s = s + grille[i][j]
+        if s != somme_cible:
+            est_magique = False
+
+    for j in range(3) :
+        s = 0
+        for i in range(3) :
+            s = s + grille[i][j]
+        if s != somme_cible:
+            est_magique = False
+
+    s = 0
+    for i in range(3) :
+        s = s + grille[i][i]
+    if s != somme_cible :
+        est_magique = False
+
+
+    s = 0
+    for i in range(3) :
+        s = s + grille[i][2 - i]
+    if s != somme_cible :
+        est_magique = False
+
+
+    if est_magique :
+        print("C'est un carré magique.")
+    else:
+        print("Ce n'est pas un carré magique.")
+
+grille = [
+    [1, 1, 6],
+    [3, 5, 7],
+    [4, 9, 2]
+]
+
+
 def main():
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
     if choix == "1":
@@ -589,6 +638,8 @@ def main():
         exercice51()
     elif choix == "52":
         exercice52()
+    elif choix == "53" :
+        exercice53(grille)
     else:
         print("Exercice non reconnu.")
 
