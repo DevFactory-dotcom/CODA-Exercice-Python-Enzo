@@ -627,6 +627,14 @@ def exercice60() :
                 resultat = numbers
     print(resultat)
 
+# Exercice 60 :
+
+def exercice61 () :
+    long = int(input("Veuillez entrer votre longueur : "))
+    larg = int(input("Veuillez entrer votre largeur : "))
+    aire = long - 2
+    for i in range (1, larg + 1) :
+        print("-"*long," "*aire,)
 
 
 def main():
@@ -751,6 +759,8 @@ def main():
         exercice59()
     elif choix == "60" :
         exercice60()
+    elif choix == "61" :
+        exercice61()
     else:
         print("Exercice non reconnu.")
 
