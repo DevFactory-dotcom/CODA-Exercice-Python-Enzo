@@ -594,6 +594,38 @@ def exercice58():
 
     print(vcomp, mot_long)
 
+# Exercice 58 :
+
+def exercice59():
+    nombre = int(input("Veuillez donner un nombre : "))
+    nombre_arm = 0
+    for i in str(nombre):
+        i = int(i) ** 3
+        nombre_arm += i
+    if nombre_arm == nombre:
+        print("Nombre d'Armstrong")
+    else:
+        print("Nombre non Armstrong")
+    
+# Exercice 59 :
+
+def exercice60() :
+    nombre1 = int(input("Veuillez entrer votre nombre : "))
+    nombre2 = int(input("Veuillez entrer votre nombre : "))
+    diviseur1 = []
+    diviseur2 = []
+    resultat = 0
+    for i in range (1, nombre1+1):
+        if nombre1 % i == 0 :
+            diviseur1.append(i)
+    for j in range (1, nombre2+1):
+        if nombre2 % j == 0 :
+            diviseur2.append(j)
+    for number in diviseur1 :
+        for numbers in diviseur2 :
+            if numbers == number and numbers > resultat:
+                resultat = numbers
+    print(resultat)
 
 
 
@@ -715,6 +747,10 @@ def main():
         exercice57()
     elif choix == "58" :
         exercice58()
+    elif choix == "59" :
+        exercice59()
+    elif choix == "60" :
+        exercice60()
     else:
         print("Exercice non reconnu.")
 
