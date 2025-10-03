@@ -541,7 +541,12 @@ def exercice54() :
         nombre = nombre // 2
     print(result)
 
+# Exercice 54 :
 
+def exercice55() :
+    de1 = randint(1,6)
+    de2 = randint(1,6)
+    print("Total =", de1 + de2)
 
 def main():
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -653,6 +658,8 @@ def main():
         exercice53(grille)
     elif choix == "54" :
         exercice54()
+    elif choix == "55" :
+        exercice55()
     else:
         print("Exercice non reconnu.")
 
